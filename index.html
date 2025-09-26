@@ -1,11 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>for-loops Blog</title>
-</head>
-<body>
-  <h1>Welcome to blog.for-loops.com</h1>
-  <p>GitHub Pages is working!</p>
-</body>
-</html>
+---
+layout: default
+title: for-loops Blog
+---
+
+<h1>Welcome to blog.for-loops.com</h1>
+<p>GitHub Pages is working!</p>
+
+<h2>Recent Posts</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
