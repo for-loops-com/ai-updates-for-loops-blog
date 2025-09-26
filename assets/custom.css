@@ -1,13 +1,13 @@
 /* Terminal/Coder Theme */
 .post-title {
     color: #00FFCC !important;
-    font-s/* Code block.post-title {
-    color: #00FFCC !important;
     font-size: 2.5em !important;
     position: relative !important;
     text-shadow: 0 0 15px rgba(0, 255, 204, 0.5) !important;
     animation: electric-glow 2s infinite !important;
-}Posts */
+}
+
+/* Posts */
 .post-content pre,
 .post-content code {
     background: #1a1a1a !important;
@@ -36,12 +36,11 @@
         transparent
     ) !important;
     animation: electric-scan 3s infinite linear !important;
-} !important;
     animation: electric-glow 2s infinite ease-in-out !important;
     text-shadow: 0 0 10px rgba(0, 255, 204, 0.5),
-                 0 0 20px rgba(0, 255, 204, 0.3),
-                 0 0 30px rgba(0, 255, 204, 0.1) !important;
-}rt url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+                    0 0 20px rgba(0, 255, 204, 0.3),
+                    0 0 30px rgba(0, 255, 204, 0.1) !important;
+    }
 
 /* Terminal/Coder Theme with Electric Effects */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
