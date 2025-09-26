@@ -1,0 +1,220 @@
+/* Terminal Effects and Utilities */
+
+/* Electric Animations */
+@keyframes electric-glow {
+    0% {
+        text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                     0 0 20px rgba(51, 255, 102, 0.3),
+                     0 0 30px rgba(51, 255, 102, 0.1);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(51, 255, 102, 0.8),
+                     0 0 30px rgba(51, 255, 102, 0.5),
+                     0 0 40px rgba(51, 255, 102, 0.3);
+    }
+    100% {
+        text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                     0 0 20px rgba(51, 255, 102, 0.3),
+                     0 0 30px rgba(51, 255, 102, 0.1);
+    }
+}
+
+@keyframes electric-flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.8; }
+}
+
+@keyframes electric-blink {
+    0%, 100% { opacity: 1; }
+    25% { opacity: 0.9; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.9; }
+}
+
+@keyframes electric-surge {
+    0% { transform: scale(1); filter: brightness(1); }
+    50% { transform: scale(1.02); filter: brightness(1.2); }
+    100% { transform: scale(1); filter: brightness(1); }
+}
+
+/* Electric Effect Classes */
+.electric-text {
+    animation: electric-glow 2s infinite ease-in-out,
+               electric-flicker 0.5s infinite ease-in-out;
+    color: #33FF66 !important;
+}
+
+.electric-box {
+    animation: electric-surge 1.5s infinite ease-in-out;
+    border: 1px solid #33FF66 !important;
+    box-shadow: 0 0 15px rgba(51, 255, 102, 0.3) !important;
+}
+
+.electric-highlight {
+    position: relative;
+    overflow: hidden;
+}
+
+.electric-highlight::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(51, 255, 102, 0.2),
+        transparent
+    );
+    animation: electric-scan 3s infinite linear;
+}
+
+@keyframes electric-scan {
+    0% { left: -100%; }
+    100% { left: 100%; }
+}
+
+.terminal-startup {
+    animation: electric-blink 0.1s steps(1) 3,
+               electric-glow 2s infinite ease-in-out;
+}
+
+/* Interactive Electric Effects */
+.electric-hover {
+    transition: all 0.3s ease;
+}
+
+.electric-hover:hover {
+    animation: electric-surge 0.5s infinite ease-in-out;
+    color: #33FF66 !important;
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                 0 0 20px rgba(51, 255, 102, 0.3);
+}
+
+/* Glow Effects */
+.glow-cyan {
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5) !important;
+}
+
+.glow-green {
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.5) !important;
+}
+
+/* Focus Effects */
+.focus-glow:focus {
+    outline: none !important;
+    border-color: #00FFCC !important;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.5) !important;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px !important;
+    height: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+    background: #111111 !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333333 !important;
+    border-radius: 4px !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #666666 !important;
+}
+
+/* Code blocks and syntax highlighting */
+pre, code {
+    background: #111111 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #333333 !important;
+    border-radius: 0.25rem !important;
+    padding: 0.5rem !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+/* Terminal-style buttons */
+.terminal-button {
+    background: #111111 !important;
+    color: #33FF66 !important;
+    border: 1px solid #333333 !important;
+    border-radius: 0.25rem !important;
+    padding: 0.5rem 1rem !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease-out !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.terminal-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(51, 255, 102, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.terminal-button:hover {
+    background: #222222 !important;
+    color: #00CC99 !important;
+    border-color: #00FFCC !important;
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.3) !important;
+    animation: electric-surge 1s infinite ease-in-out !important;
+}
+
+.terminal-button:hover::before {
+    left: 100%;
+}
+
+.terminal-button:active {
+    transform: scale(0.98);
+    animation: electric-flicker 0.2s ease-in-out;
+}
+
+/* Service bullets with terminal amber */
+.service-bullet {
+    color: #FFAA00 !important;
+    margin-right: 0.5rem !important;
+}
+
+/* Form styling */
+input[type="text"],
+input[type="email"],
+textarea {
+    background: #111111 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #333333 !important;
+    border-radius: 0.25rem !important;
+    padding: 0.5rem !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+}
+
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+    color: #666666 !important;
+}
+
+/* Destructive actions */
+.destructive {
+    color: #FF5555 !important;
+}
+
+/* Muted text */
+.muted {
+    color: #888888 !important;
+}

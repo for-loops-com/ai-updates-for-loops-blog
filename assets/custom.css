@@ -1,25 +1,180 @@
-/* Cyberpunk Hacker Theme */
+/* Terminal/Coder Theme */
+.post-title {
+    color: #00FFCC !important;
+    font-s/* Code block.post-title {
+    color: #00FFCC !important;
+    font-size: 2.5em !important;
+    position: relative !important;
+    text-shadow: 0 0 15px rgba(0, 255, 204, 0.5) !important;
+    animation: electric-glow 2s infinite !important;
+}Posts */
+.post-content pre,
+.post-content code {
+    background: #1a1a1a !important;
+    color: #33FF66 !important;
+    padding: 15px !important;
+    border: 1px solid #333333 !important;
+    border-radius: 5px !important;
+    font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+    position: relative !important;
+    overflow: hidden !important;
+    animation: electric-surge 3s infinite ease-in-out !important;
+}
+
+.post-content pre::before,
+.post-content code::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: -100% !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(51, 255, 102, 0.2),
+        transparent
+    ) !important;
+    animation: electric-scan 3s infinite linear !important;
+} !important;
+    animation: electric-glow 2s infinite ease-in-out !important;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5),
+                 0 0 20px rgba(0, 255, 204, 0.3),
+                 0 0 30px rgba(0, 255, 204, 0.1) !important;
+}rt url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Terminal/Coder Theme with Electric Effects */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Core Styles */
+/* Terminal/Coder Theme with Electric Effects */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* Base Electric Animations */
+@keyframes electric-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+@keyframes electric-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                    0 0 20px rgba(51, 255, 102, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(51, 255, 102, 0.8),
+                    0 0 30px rgba(51, 255, 102, 0.5);
+    }
+}
+
+@keyframes electric-scan {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+/* Core Styles */
 body {
     background-color: #000000 !important;
-    color: #00ff9f !important;
-    font-family: 'Courier New', monospace !important;
+    color: #FFFFFF !important;
+    font-family: 'JetBrains Mono', 'Fira Code', ui-monospace, SFMono-Regular, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace !important;
     line-height: 1.6 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
+/* Base Electric Animations */
+@keyframes electric-pulse {
+    0% { opacity: 1; }
+    50% { opacity: 0.8; }
+    100% { opacity: 1; }
+}
+
+@keyframes electric-glow {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                    0 0 20px rgba(51, 255, 102, 0.3);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(51, 255, 102, 0.8),
+                    0 0 30px rgba(51, 255, 102, 0.5);
+    }
+}
+
+/* Layout */
 .wrapper {
-    max-width: 800px !important;
+    max-width: 1400px !important;
     margin: 0 auto !important;
-    padding: 0 20px !important;
+    padding: 2rem !important;
 }
 
 /* Site Header */
 .site-header {
-    border-top: 5px solid #00ccff !important;
-    border-bottom: 1px solid #00ccff !important;
-    background: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.3) !important;
+    border-top: 5px solid #00FFCC !important;
+    border-bottom: 1px solid #333333 !important;
+    background: #111111 !important;
+    box-shadow: 0 0 20px rgba(51, 255, 102, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+.site-header::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 200% !important;
+    height: 100% !important;
+    background: linear-gradient(90deg, 
+        transparent 0%,
+        rgba(51, 255, 102, 0.1) 50%,
+        transparent 100%
+    ) !important;
+    animation: electric-scan 3s infinite linear !important;
+}
+
+.site-header .site-title {
+    position: relative !important;
+    color: #33FF66 !important;
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.5) !important;
+    animation: electric-glow 2s infinite !important;
+    z-index: 1 !important;
+}
+
+/* Site Header */
+.site-header {
+    border-top: 5px solid #00FFCC !important;
+    border-bottom: 1px solid #333333 !important;
+    background: #111111 !important;
+    box-shadow: 0 0 20px rgba(51, 255, 102, 0.3) !important;
+    position: relative !important;
+}
+
+.site-header::after {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    background: linear-gradient(90deg, transparent, rgba(51, 255, 102, 0.1), transparent) !important;
+    animation: electric-pulse 2s infinite !important;
+}
+
+.site-header .site-title {
+    position: relative !important;
+    color: #33FF66 !important;
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.5) !important;
+    animation: electric-glow 2s infinite !important;
+    z-index: 1 !important;
+}
+
+.site-header .site-title {
+    animation: electric-glow 2s infinite ease-in-out !important;
+    color: #33FF66 !important;
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.5),
+                 0 0 20px rgba(51, 255, 102, 0.3),
+                 0 0 30px rgba(51, 255, 102, 0.1) !important;
 }
 
 /* Post Styling */
@@ -46,20 +201,23 @@ body {
 .post-content h2, 
 .post-content h3, 
 .post-content h4 {
-    color: #00ccff !important;
-    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
+    color: #00FFCC !important;
+    animation: electric-glow 2s infinite ease-in-out !important;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5),
+                 0 0 20px rgba(0, 255, 204, 0.3),
+                 0 0 30px rgba(0, 255, 204, 0.1) !important;
 }
 
 .post-content a {
-    color: #00ffff !important;
+    color: #33FF66 !important;
     text-decoration: none !important;
-    transition: all 0.3s ease !important;
-    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+    transition: all 0.2s ease-out !important;
+    position: relative !important;
 }
 
 .post-content a:hover {
-    color: #ff00ff !important;
-    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8) !important;
+    color: #00CC99 !important;
+    text-shadow: 0 0 10px rgba(51, 255, 102, 0.3) !important;
 }
 
 /* Code Blocks in Posts */
