@@ -1,0 +1,67 @@
+/* VS Code-style Code Editor Theme */
+.highlight, pre.highlight, .post-content pre {
+    background: #1e1e1e !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+    margin: 20px 0 !important;
+    overflow-x: auto !important;
+    border: 1px solid #333 !important;
+    box-shadow: 0 4px 12px rgba(0, 204, 255, 0.1) !important;
+    position: relative !important;
+}
+
+.post-content pre code {
+    font-family: 'JetBrains Mono', 'Fira Code', Consolas, Monaco, 'Courier New', monospace !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+    color: #d4d4d4 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    white-space: pre !important;
+    display: block !important;
+}
+
+/* VS Code Dark+ Theme Colors */
+.highlight .c, .highlight .c1, .highlight .cm { color: #6a9955 !important; } /* Comments */
+.highlight .k, .highlight .kd, .highlight .kn { color: #569cd6 !important; } /* Keywords */
+.highlight .s, .highlight .s1, .highlight .s2 { color: #ce9178 !important; } /* Strings */
+.highlight .nb, .highlight .nf { color: #dcdcaa !important; } /* Functions */
+.highlight .nn, .highlight .nc { color: #4ec9b0 !important; } /* Classes */
+.highlight .n { color: #9cdcfe !important; } /* Variables */
+.highlight .o { color: #d4d4d4 !important; } /* Operators */
+.highlight .p { color: #d4d4d4 !important; } /* Punctuation */
+.highlight .mi, .highlight .mf { color: #b5cea8 !important; } /* Numbers */
+
+/* Code Block Title Bar */
+.post-content pre::before {
+    content: attr(data-lang);
+    position: absolute !important;
+    top: 0 !important;
+    right: 1em !important;
+    padding: 0.2em 0.5em !important;
+    font-size: 0.75em !important;
+    color: #858585 !important;
+    font-family: 'Segoe UI', system-ui, sans-serif !important;
+}
+
+/* Custom Scrollbar */
+.post-content pre::-webkit-scrollbar {
+    height: 8px !important;
+    width: 8px !important;
+}
+
+.post-content pre::-webkit-scrollbar-track {
+    background: #1e1e1e !important;
+    border-radius: 4px !important;
+}
+
+.post-content pre::-webkit-scrollbar-thumb {
+    background: #424242 !important;
+    border-radius: 4px !important;
+}
+
+.post-content pre::-webkit-scrollbar-thumb:hover {
+    background: #4f4f4f !important;
+}

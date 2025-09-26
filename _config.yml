@@ -1,3 +1,18 @@
+title: for-loops Blog
+description: A blog about automation and technology
+url: "https://blog.for-loops.com" # your site's domain
+baseurl: "" # the subpath of your site, e.g. /blog
 theme: minima
 plugins:
   - jekyll-feed
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:day/:title/
+
+# Custom styles
+sass:
+  style: compressed
+
+# Additional CSS files
+custom_css: custom.css

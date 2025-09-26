@@ -1,1 +1,131 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://0.0.0.0:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/" rel="alternate" type="text/html" /><updated>2025-09-26T04:13:43+00:00</updated><id>http://0.0.0.0:4000/feed.xml</id><title type="html">ai-updates-for-loops-blog</title></feed>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-09-26T08:32:29+00:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">for-loops Blog</title><subtitle>A blog about automation and technology</subtitle><entry><title type="html">Automation Update</title><link href="http://localhost:4000/2025/09/26/automation-update/" rel="alternate" type="text/html" title="Automation Update" /><published>2025-09-26T00:00:00+00:00</published><updated>2025-09-26T00:00:00+00:00</updated><id>http://localhost:4000/2025/09/26/automation-update</id><content type="html" xml:base="http://localhost:4000/2025/09/26/automation-update/"><![CDATA[<p>Welcome to our first blog post about automation! This is a sample post to get you started.</p>
+
+<h2 id="whats-new-in-automation">What’s New in Automation</h2>
+
+<p>Here’s a cool Python script that demonstrates automated task scheduling:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">schedule</span>
+<span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+
+<span class="k">class</span> <span class="nc">AutomationBot</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">status</span> <span class="o">=</span> <span class="s">"idle"</span>
+    
+    <span class="k">def</span> <span class="nf">execute_task</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">task_name</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="sa">f</span><span class="s">"🤖 [</span><span class="si">{</span><span class="n">datetime</span><span class="p">.</span><span class="n">now</span><span class="p">()</span><span class="si">}</span><span class="s">] Bot </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">name</span><span class="si">}</span><span class="s"> executing: </span><span class="si">{</span><span class="n">task_name</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">status</span> <span class="o">=</span> <span class="s">"running"</span>
+        <span class="c1"># Simulate task execution
+</span>        <span class="n">time</span><span class="p">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="p">.</span><span class="n">status</span> <span class="o">=</span> <span class="s">"completed"</span>
+        
+    <span class="k">def</span> <span class="nf">get_status</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s">"Status: </span><span class="si">{</span><span class="bp">self</span><span class="p">.</span><span class="n">status</span><span class="si">}</span><span class="s">"</span>
+
+<span class="c1"># Create an instance of our bot
+</span><span class="n">cyber_bot</span> <span class="o">=</span> <span class="n">AutomationBot</span><span class="p">(</span><span class="s">"CyberBot-X9"</span><span class="p">)</span>
+
+<span class="c1"># Schedule some tasks
+</span><span class="k">def</span> <span class="nf">daily_routine</span><span class="p">():</span>
+    <span class="n">cyber_bot</span><span class="p">.</span><span class="n">execute_task</span><span class="p">(</span><span class="s">"System Optimization"</span><span class="p">)</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">cyber_bot</span><span class="p">.</span><span class="n">get_status</span><span class="p">())</span>
+
+<span class="n">schedule</span><span class="p">.</span><span class="n">every</span><span class="p">().</span><span class="n">day</span><span class="p">.</span><span class="n">at</span><span class="p">(</span><span class="s">"03:00"</span><span class="p">).</span><span class="n">do</span><span class="p">(</span><span class="n">daily_routine</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And here’s how we can set up a modern Node.js automation server:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">express</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">express</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="p">{</span> <span class="nx">Worker</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">worker_threads</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">neon</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">neon-js</span><span class="dl">'</span><span class="p">);</span>  <span class="c1">// Fictional package for cool effects</span>
+
+<span class="kd">class</span> <span class="nx">AutomationServer</span> <span class="p">{</span>
+    <span class="kd">constructor</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">app</span> <span class="o">=</span> <span class="nx">express</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">tasks</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Map</span><span class="p">();</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">init</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="k">async</span> <span class="nx">init</span><span class="p">()</span> <span class="p">{</span>
+        <span class="c1">// Configure neon effects</span>
+        <span class="nx">neon</span><span class="p">.</span><span class="nx">configure</span><span class="p">({</span>
+            <span class="na">color</span><span class="p">:</span> <span class="dl">'</span><span class="s1">#00ff9f</span><span class="dl">'</span><span class="p">,</span>
+            <span class="na">intensity</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+            <span class="na">pulse</span><span class="p">:</span> <span class="kc">true</span>
+        <span class="p">});</span>
+
+        <span class="c1">// Set up API endpoints</span>
+        <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="dl">'</span><span class="s1">/api/tasks</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">req</span><span class="p">,</span> <span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+            <span class="kd">const</span> <span class="nx">taskId</span> <span class="o">=</span> <span class="nx">crypto</span><span class="p">.</span><span class="nx">randomUUID</span><span class="p">();</span>
+            <span class="k">this</span><span class="p">.</span><span class="nx">tasks</span><span class="p">.</span><span class="kd">set</span><span class="p">(</span><span class="nx">taskId</span><span class="p">,</span> <span class="p">{</span>
+                <span class="na">status</span><span class="p">:</span> <span class="dl">'</span><span class="s1">initializing</span><span class="dl">'</span><span class="p">,</span>
+                <span class="na">timestamp</span><span class="p">:</span> <span class="nb">Date</span><span class="p">.</span><span class="nx">now</span><span class="p">()</span>
+            <span class="p">});</span>
+            
+            <span class="c1">// Start task in background</span>
+            <span class="kd">const</span> <span class="nx">worker</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Worker</span><span class="p">(</span><span class="dl">'</span><span class="s1">./taskWorker.js</span><span class="dl">'</span><span class="p">);</span>
+            <span class="nx">worker</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">({</span> <span class="nx">taskId</span> <span class="p">});</span>
+            
+            <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">({</span> <span class="nx">taskId</span> <span class="p">});</span>
+        <span class="p">});</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="c1">// Start the server</span>
+<span class="kd">const</span> <span class="nx">server</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AutomationServer</span><span class="p">();</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">🚀 Server ready for cyber-operations</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p>You can also use shell scripts for automation:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="c"># Cyber-style status function</span>
+<span class="k">function </span>show_status<span class="o">()</span> <span class="o">{</span>
+    <span class="nb">echo</span> <span class="nt">-e</span> <span class="s2">"</span><span class="se">\e</span><span class="s2">[38;5;51m[*] </span><span class="nv">$1</span><span class="se">\e</span><span class="s2">[0m"</span>
+<span class="o">}</span>
+
+<span class="c"># Main automation loop</span>
+<span class="k">while </span><span class="nb">true</span><span class="p">;</span> <span class="k">do
+    </span>show_status <span class="s2">"Scanning system..."</span>
+    
+    <span class="c"># Check system resources</span>
+    <span class="nv">MEMORY</span><span class="o">=</span><span class="si">$(</span>free <span class="nt">-m</span> | <span class="nb">awk</span> <span class="s1">'NR==2{printf "%.2f%%", $3*100/$2}'</span><span class="si">)</span>
+    <span class="nv">CPU</span><span class="o">=</span><span class="si">$(</span>top <span class="nt">-bn1</span> | <span class="nb">grep</span> <span class="s2">"Cpu(s)"</span> | <span class="nb">awk</span> <span class="s1">'{print $2}'</span><span class="si">)</span>
+    
+    show_status <span class="s2">"Memory Usage: </span><span class="nv">$MEMORY</span><span class="s2">"</span>
+    show_status <span class="s2">"CPU Load: </span><span class="nv">$CPU</span><span class="s2">%"</span>
+    
+    <span class="nb">sleep </span>5
+<span class="k">done</span>
+</code></pre></div></div>
+
+<h2 id="advanced-features">Advanced Features</h2>
+
+<p>Here’s some CSS for styling your automation dashboard:</p>
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nc">.dashboard</span> <span class="p">{</span>
+    <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0</span><span class="p">,</span> <span class="m">0.9</span><span class="p">);</span>
+    <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#00ff9f</span><span class="p">;</span>
+    <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">0</span><span class="p">,</span> <span class="m">255</span><span class="p">,</span> <span class="m">159</span><span class="p">,</span> <span class="m">0.3</span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="nc">.metric</span> <span class="p">{</span>
+    <span class="nl">color</span><span class="p">:</span> <span class="m">#00ccff</span><span class="p">;</span>
+    <span class="nl">font-family</span><span class="p">:</span> <span class="s2">'Courier New'</span><span class="p">,</span> <span class="nb">monospace</span><span class="p">;</span>
+    <span class="nl">animation</span><span class="p">:</span> <span class="n">pulse</span> <span class="m">2s</span> <span class="n">infinite</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="k">@keyframes</span> <span class="n">pulse</span> <span class="p">{</span>
+    <span class="err">0</span><span class="o">%</span> <span class="p">{</span> <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#00ccff</span><span class="p">;</span> <span class="p">}</span>
+    <span class="err">50</span><span class="o">%</span> <span class="p">{</span> <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">20px</span> <span class="m">#00ccff</span><span class="p">;</span> <span class="p">}</span>
+    <span class="err">100</span><span class="o">%</span> <span class="p">{</span> <span class="nl">text-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">5px</span> <span class="m">#00ccff</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>These code examples demonstrate different aspects of automation while showcasing our cyberpunk theme’s code highlighting capabilities.</p>
+
+<p>In this post, we’ll explore the latest trends in automation and how they can benefit your workflow.</p>
+
+<p>Stay tuned for more updates!</p>]]></content><author><name></name></author><category term="automation" /><summary type="html"><![CDATA[Welcome to our first blog post about automation! This is a sample post to get you started.]]></summary></entry></feed>

@@ -1,0 +1,209 @@
+/* Cyberpunk Hacker Theme */
+body {
+    background-color: #000000 !important;
+    color: #00ff9f !important;
+    font-family: 'Courier New', monospace !important;
+    line-height: 1.6 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.wrapper {
+    max-width: 800px !important;
+    margin: 0 auto !important;
+    padding: 0 20px !important;
+}
+
+/* Site Header */
+.site-header {
+    border-top: 5px solid #00ccff !important;
+    border-bottom: 1px solid #00ccff !important;
+    background: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.3) !important;
+}
+
+/* Post Styling */
+.post-title {
+    color: #00ffff !important;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+    font-size: 2.5em !important;
+}
+
+.post-meta {
+    color: #00ff9f !important;
+    font-size: 0.9em !important;
+    margin-bottom: 2em !important;
+}
+
+.post-content {
+    background: rgba(0, 0, 0, 0.8) !important;
+    padding: 25px !important;
+    border: 1px solid #00ccff !important;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.2) !important;
+    margin-top: 20px !important;
+}
+
+.post-content h2, 
+.post-content h3, 
+.post-content h4 {
+    color: #00ccff !important;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
+}
+
+.post-content a {
+    color: #00ffff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}
+
+.post-content a:hover {
+    color: #ff00ff !important;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8) !important;
+}
+
+/* Code Blocks in Posts */
+.post-content pre,
+.post-content code {
+    background: #1a1a1a !important;
+    color: #00ff9f !important;
+    padding: 15px !important;
+    border: 1px solid #00ccff !important;
+    border-radius: 5px !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+/* Blockquotes in Posts */
+.post-content blockquote {
+    border-left: 4px solid #00ccff !important;
+    padding-left: 20px !important;
+    margin: 20px 0 !important;
+    font-style: italic !important;
+    background: rgba(0, 204, 255, 0.05) !important;
+    color: #00ff9f !important;
+}
+}
+
+/* Post Styling */
+.post-title {
+    color: #00ffff !important;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+    font-size: 2.5em !important;
+}
+
+.post-meta {
+    color: #00ff9f !important;
+    font-size: 0.9em !important;
+    margin-bottom: 2em !important;
+}
+
+.post-content {
+    background: rgba(0, 0, 0, 0.8) !important;
+    padding: 25px !important;
+    border: 1px solid #00ccff !important;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.2) !important;
+    margin-top: 20px !important;
+}
+
+.post-content h2, .post-content h3, .post-content h4 {
+    color: #00ccff !important;
+    text-shadow: 0 0 10px rgba(0, 204, 255, 0.7) !important;
+}
+
+.post-content a {
+    color: #00ffff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}
+
+.post-content a:hover {
+    color: #ff00ff !important;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.8) !important;
+}
+
+/* Code Blocks in Posts */
+.post-content pre,
+.post-content code {
+    background: #1a1a1a !important;
+    color: #00ff9f !important;
+    padding: 15px !important;
+    border: 1px solid #00ccff !important;
+    border-radius: 5px !important;
+    font-family: 'Courier New', monospace !important;
+}
+
+/* Blockquotes in Posts */
+.post-content blockquote {
+    border-left: 4px solid #00ccff !important;
+    padding-left: 20px !important;
+    margin: 20px 0 !important;
+    font-style: italic !important;
+    background: rgba(0, 204, 255, 0.05) !important;
+    color: #00ff9f !important;
+}
+    background-color: #0f0f0f !important;
+    box-shadow: 0 0 20px rgba(0, 204, 255, 0.3) !important;
+}
+
+.site-title, .site-title:visited {
+    color: #00ccff !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    font-weight: bold !important;
+}
+
+.site-nav .page-link {
+    color: #00ff9f !important;
+    text-transform: uppercase !important;
+}
+
+a {
+    color: #00ccff !important;
+    text-decoration: none !important;
+    transition: all 0.3s ease !important;
+}
+
+a:hover {
+    color: #ff00ff !important;
+    text-shadow: 0 0 8px #ff00ff !important;
+}
+
+.post-list li {
+    border: 1px solid #00ccff !important;
+    margin-bottom: 20px !important;
+    padding: 15px !important;
+    background-color: rgba(0, 204, 255, 0.05) !important;
+    transition: all 0.3s ease !important;
+}
+
+.post-list li:hover {
+    box-shadow: 0 0 15px rgba(0, 204, 255, 0.3) !important;
+    transform: translateX(5px) !important;
+}
+
+.post-meta {
+    color: #00ff9f !important;
+}
+
+.post-link {
+    color: #00ccff !important;
+    font-weight: bold !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #00ff9f !important;
+    text-transform: uppercase !important;
+    letter-spacing: 2px !important;
+}
+
+.site-footer {
+    border-top: 1px solid #00ccff !important;
+    background-color: #0f0f0f !important;
+}
+
+pre, code {
+    background-color: #1a1a1a !important;
+    border: 1px solid #00ccff !important;
+    color: #00ff9f !important;
+}
