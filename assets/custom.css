@@ -82,7 +82,7 @@ body {
     background: rgba(0, 204, 255, 0.05) !important;
     color: #00ff9f !important;
 }
-}
+
 
 /* Post Styling */
 .post-title {
@@ -142,9 +142,8 @@ body {
     background: rgba(0, 204, 255, 0.05) !important;
     color: #00ff9f !important;
 }
-    background-color: #0f0f0f !important;
-    box-shadow: 0 0 20px rgba(0, 204, 255, 0.3) !important;
-}
+/* Site Navigation */
+
 
 .site-title, .site-title:visited {
     color: #00ccff !important;
